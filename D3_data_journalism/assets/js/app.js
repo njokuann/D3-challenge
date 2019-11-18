@@ -82,12 +82,12 @@ d3.csv("assets/data/data.csv").then(function(stateData) {
         .attr("x", 0 - (height / 2))
         .attr("dy", "1em")
         .attr("class", "axisText")
-        .text("Healthcare %")
+        .text("Poverty %")
 
     chartGroup.append("text")
         .attr("transform", `translate(${width / 2}, ${height + margin.top + 30})`)
         .attr("class", "axisText")
-        .text("Poverty %");
+        .text("Healthcare %");
 
 
 }).catch(function(error) {
